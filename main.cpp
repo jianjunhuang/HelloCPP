@@ -1,5 +1,7 @@
 #include <iostream>
 #include "io.h"
+using std::cin;
+using std::endl;
 // initialize variables
 int a;
 int b = 1;//Copy initialization
@@ -16,6 +18,11 @@ int j, k(5);//j = 0
 //int m, n{6};// m = 0 error
 
 void initTest() {
+    // using affects this function 
+    using std::cout;
+    cout << "Test" << endl;
+    cout << "test";
+    cout << "test";
     std::cout << b << std::endl;
     std::cout << c << std::endl;
     //std::cout << d << std::endl;
@@ -30,7 +37,7 @@ void initTest() {
 
 int main() {
     std::cout << "Hello World!" << std::endl;
-//    initTest();
+    initTest();
 //    io_test();
     return 0;
 }
