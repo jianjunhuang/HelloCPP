@@ -18,8 +18,6 @@ int j, k(5);//j = 0
 //int m, n{6};// m = 0 error
 
 void initTest() {
-    // using affects this function 
-    using std::cout;
     cout << "Test" << endl;
     cout << "test";
     cout << "test";
